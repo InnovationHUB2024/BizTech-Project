@@ -65,7 +65,7 @@
     <title>Sign up</title>
   </head>
   <body>
-  <button id="back" type="submit" class="btn btn-outline-dark" name="submit" onclick="location.href = 'userhome.php';"><-Back</button>
+  <button id="back" type="submit" class="btn btn-outline-dark" name="submit" onclick="location.href = 'index.php';"><-Back</button>
 
     <div class="container">
     <img id="image" src="signback6.jpeg">
