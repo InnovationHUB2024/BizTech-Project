@@ -1,20 +1,21 @@
 <?php
 session_start();
-if($_SESSION) {
-    include("usernav.php");
-}
-else {
+// if($_SESSION) {
+//     include("usernav.php");
+// }
+// else {
     include("navbar.php");
-}
-include("databaseconnect.php");
+// }
+// include("databaseconnect.php");
   
-include("getvalues.php");
-$rand1=rand(0,$count3-1);
-$rand2=rand(0,$count3-1);
-$rand3=rand(0,$count-1);
+// include("getvalues.php");
+// $rand1=rand(0,$count3-1);
+// $rand2=rand(0,$count3-1);
+// $rand3=rand(0,$count-1);
 
 
 ?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -26,7 +27,7 @@ $rand3=rand(0,$count-1);
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
       <style type="text/css">
 
         body {
@@ -117,14 +118,14 @@ $rand3=rand(0,$count-1);
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img id="check" src="Photos (1).gif" class="d-block w-100 caru" alt="...">
+      <img id="check" src="images/AditiAlllleee.jpeg" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5 id="name1">Connecting people</h5>
         
       </div>
     </div>
     <div class="carousel-item">
-      <div id="img2"><img src="Articles.gif" class="d-block w-100 caru" alt="..."></div>
+      <div id="img2"><img src="images/BalaTek.jpeg" class="d-block w-100 caru" alt="..."></div>
       <div class="carousel-caption d-none d-md-block">
         <h5 id="name2"><?php echo $names[$rand1]?></h5>
         <p id="by2">Uploaded by <?php echo $uploaders[$rand2]?>
@@ -132,7 +133,7 @@ $rand3=rand(0,$count-1);
       </div>
     </div>
     <div class="carousel-item">
-    <div id="img3"><img src="<?php echo $file_name[$rand2]?>" class="d-block w-100 caru" alt="..."></div>
+    <div id="img3"><img src="images/poetry.gif" class="d-block w-100 caru" alt="..."></div>
       <div class="carousel-caption d-none d-md-block">
         <h5 id="name3"><?php echo $names[$rand2]?></h5>
         <p id="by3">Uploaded by <?php echo $uploaders[$rand2]?></p>
@@ -159,20 +160,26 @@ $rand3=rand(0,$count-1);
 
         <div id="right" >
           <div class="article ">
-              <h1 id="header"><?php echo $titles[$rand3]?></h1>
+              <h1 id="header">Solomno Rules!</h1>
               <hr>
               <br>
           <article class="lead scrollable" id="content">
-          <?php echo $text[$rand3]?>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam doloremque modi asperiores <br>
+                sapiente, explicabo deleniti! Voluptate voluptas ipsa ad facere excepturi rem in quisquam, iusto dolore sit iste quos.
                  
           
           </article>
               
-              <p id="by" class="lead"></p>
+              <p id="by" class="lead">
+                
+              </p>
               <br>
           </div>
       </div>
     </div>
+
+
+          
 
         <footer  id="footer">
           
