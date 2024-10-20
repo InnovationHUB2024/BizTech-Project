@@ -11,87 +11,158 @@
     <link rel="stylesheet" href="assets/css/style.css" />  
       <style type="text/css">
      
-     body {
-        background-image:url('images/finalback4.jpeg');
-        background-repeat:no-repeat;
-        background-size:cover;
-      }
-       
         .container {
-            margin-top:100px;
+            margin-top: 100px;
+            background-color: rgb(22, 53, 100);
+            width: 90%;
+            max-width: 450px;
+            height: auto;
+            padding: 50px;
+            border-radius: 20px;
         }
-
-        
-
-        #forrm {
-          position: relative;
-          float: right;
-          right: 355px;
-          top: 175px;
-          bottom: 200px;
-          
-                  }
 
         label {
           color: white;
           font: small-caps;
           font-weight: 500;
         }
-        #image{
-          size:50%;
-          position:relative;
-          left:360px;
-          margin:auto;
-          border-radius:25%;
+
+        .img {
+          width: 100%;
+          height: auto;
+          background-color: rgb(22, 53, 100);
+          text-align: center;
         }
-        #back{
-          margin:10px;
-          border-radius:50px;
+
+        .img img {
+          width: 50%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
         }
-        #login {
-          position:relative;
-          top:50px;
-          left:110px;
-          border-radius:50px;
+
+        .log {
+          width: 100%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
         }
-        #email,#password{
-          width:300px;
-          border-radius:20px;
+
+        .log button {
+          width: 100%;
+          border-radius: 40px;
         }
-        #alert{
-          position:relative;
-          bottom:550px;
-          left:525px;
+
+        .log a {
+          text-align: center;
+          font-size: small;
+          margin-top: 20px;
+        }
+
+        .log a > p {
+          margin-top: 10px;
+          color: white;
+          opacity: 0.7;
+          text-decoration: underline;
+        }
+
+        .log a > p:hover {
+          opacity: 1;
+        }
+
+        .back {
+          width: 150px;
+          height: auto;
+          border-radius: 40px;
+          background-color: rgb(22, 53, 100);
+          margin-left: 30px;
+          cursor: pointer;
+          transition: box-shadow 0.3s ease, transform 0.3s ease;
+          padding: 10px 20px;
+          text-align: center;
+        }
+
+        .back a {
+          text-decoration: none;
+        }
+
+        .back a > p {
+          color: white;
+          font-size: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        .back {
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back:hover {
+          box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+          transform: translateY(-10px) scale(1.05);
+          background-color: rgba(22, 53, 100, 0.8);
+        }
+
+        #email, #password {
+          width: 100%;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .container {
+            width: 90%;
+            padding: 20px;
+          }
+
+          .back {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            font-size: 18px;
+            padding: 10px;
+          }
+
+          .log button {
+            border-radius: 20px;
+          }
         }
        
       </style>
-      </style>
-      
-
     <title>Sign up</title>
   </head>
   <body>
         
-  <button id="back" type="submit" class="btn btn-outline-dark" name="submit" onclick="location.href = 'index.php';"><-Back</button>
-    <div class="container">
-      <img id="image" src="images/loginback.jpeg">
+<div class="img">
+<div>
+  <a href="index.php"><img src="images/miva.png" alt="Miva logo"></a>
+</div>  
+</div>
+
+  <div class="container">
     <form method="post" id="forrm">
         <div class="form-group">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com">
-            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
-        <button id="login" type="submit" class="btn btn-outline-light" name="submit">Log In</button>
+        <div class="log">
+          <button type="submit" class="btn btn-outline-light" name="submit">Log In</button>
+          <a class="create" href="#"><p>Create Account</p></a>
+        </div>
     </form>
     <br>
     <span id="alert"></span>
-    </div>
+  </div>
 
-    <script type="text/javascript">
+  <br><br>
+  <div class="back">
+    <a href="index.php"><p> <----- Back </p></a>
+  </div>
+
+  <script type="text/javascript">
       //alert($('#image').width())
       var error='<?php echo $error;?>';
       if(error!="") {
@@ -105,5 +176,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
-  </body>
-  </html>
+</body>
+</html>
