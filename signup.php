@@ -159,7 +159,7 @@
         </div>
         <div class="log">
           <button type="submit" class="btn btn-outline-light" name="submit">Create Account</button>
-          <a class="create" href="#"><p>Already have an account?, login</p></a>
+          <a class="create" href="login.php"><p>Already have an account?, login</p></a>
         </div>
     </form>
     <br>
