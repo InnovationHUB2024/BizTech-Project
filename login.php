@@ -150,7 +150,7 @@
         </div>
         <div class="log">
           <button type="submit" class="btn btn-outline-light" name="submit">Log In</button>
-          <a class="create" href="#"><p>Create Account</p></a>
+          <a class="create" href="signup.php"><p>Create Account</p></a>
         </div>
     </form>
     <br>
