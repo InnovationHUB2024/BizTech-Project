@@ -5,105 +5,180 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="assets/css/style.css" />  
       <style type="text/css">
-       body {
-        background-image:url('finalback3.jpeg');
-        background-repeat:no-repeat;
-        background-size:cover;
-      }
      
         .container {
-            margin-top:100px;
+            margin-top: 100px;
+            background-color: rgb(22, 53, 100);
+            width: 90%;
+            max-width: 450px;
+            height: auto;
+            padding: 50px;
+            border-radius: 20px;
         }
-        #image{
-          size:50%;
-          position:relative;
-          left:360px;
-          
-          margin:auto;
-          border-radius:15%;
-        }
+
         label {
           color: white;
           font: small-caps;
           font-weight: 500;
         }
-        #form {
-          position: relative;
-          float: right;
-          right: 405px;
-          top: 125px;
-          
-        }
-        #back{
-          margin:10px;
-          border-radius:50px;
-        }
-        #signup {
-          position:relative;
-          top:70px;
-          left:55px;
-          border-radius:50px;
+
+        .img {
+          width: 100%;
+          height: auto;
+          background-color: rgb(22, 53, 100);
+          text-align: center;
         }
 
-          #email,#password,#username,#checkpass {
-            border-radius:20px;
+        .img img {
+          width: 50%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .log {
+          width: 100%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .log button {
+          width: 100%;
+          border-radius: 40px;
+        }
+
+        .log a {
+          text-align: center;
+          font-size: small;
+          margin-top: 20px;
+        }
+
+        .log a > p {
+          margin-top: 10px;
+          color: white;
+          opacity: 0.7;
+          text-decoration: underline;
+        }
+
+        .log a > p:hover {
+          opacity: 1;
+        }
+
+        .back {
+          width: 150px;
+          height: auto;
+          border-radius: 40px;
+          background-color: rgb(22, 53, 100);
+          margin-left: 30px;
+          cursor: pointer;
+          transition: box-shadow 0.3s ease, transform 0.3s ease;
+          padding: 10px 20px;
+          text-align: center;
+        }
+
+        .back a {
+          text-decoration: none;
+        }
+
+        .back a > p {
+          color: white;
+          font-size: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        .back {
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back:hover {
+          box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+          transform: translateY(-10px) scale(1.05);
+          background-color: rgba(22, 53, 100, 0.8);
+        }
+
+        #email, #password {
+          width: 100%;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .container {
+            width: 90%;
+            padding: 20px;
           }
-          #alert{
-            position:relative;
-            bottom:280px;
+
+          .back {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            font-size: 18px;
+            padding: 10px;
           }
+
+          .log button {
+            border-radius: 20px;
+          }
+        }
+       
       </style>
-      
-
     <title>Sign up</title>
   </head>
   <body>
-  <button id="back" type="submit" class="btn btn-outline-dark" name="submit" onclick="location.href = 'index.php';"><-Back</button>
+        
+<div class="img">
+<div>
+  <a href="index.php"><img src="images/miva.png" alt="Miva logo"></a>
+</div>  
+</div>
 
-    <div class="container">
-    <img id="image" src="signback6.jpeg">
-      <form method="post" id="form">
+  <div class="container">
+    <form method="post" id="forrm">
         <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com">
-          <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com">
         </div>
         <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" class="form-control" id="username" name="username" placeholder="Joe Mama">
+            <label for="fname">Username</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="John Doe">
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="form-group">
-          <label for="checkpass">Re-Type Password</label>
-          <input type="password" class="form-control" id="checkpass" name="checkpass">
-          
-          
+            <label for="password">Confirm Password</label>
+            <input type="password" class="form-control" id="password" name="password">
         </div>
-      
-        <button type="submit" class="btn btn-outline-dark" name="submit" id="signup">Sign Up</button>
-      </form>
-      <span id="alert"></span>
-    </div>
-    <script type="text/javascript">
-    
-      var error='<?php echo $error;?>';
-      if(error!="") {
-        $('#alert').addClass('alert alert-danger');
-        $('#alert').append(error);
+        <div class="log">
+          <button type="submit" class="btn btn-outline-light" name="submit">Create Account</button>
+          <a class="create" href="#"><p>Already have an account?, login</p></a>
+        </div>
+    </form>
+    <br>
+    <span id="alert"></span>
+  </div>
 
-      }    
-      
-    </script>
+  <br><br>
+  <div class="back">
+    <a href="index.php"><p> <----- Back </p></a>
+  </div>
+  <script type="text/javascript">
     
-  </body>
-</html
+    var error='<?php echo $error;?>';
+    if(error!="") {
+      $('#alert').addClass('alert alert-danger');
+      $('#alert').append(error);
+
+    }    
+    
+  </script>
+</body>
+</html>
