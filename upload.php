@@ -14,6 +14,7 @@ if(isset($_POST['submit'])) {
     include("databaseconnect.php");
 
   if($option=='article') {
+        // die('article');
         $sql3="CREATE TABLE IF NOT EXISTS article(
             ID INT PRIMARY KEY AUTO_INCREMENT,
             Username VARCHAR(70) NOT NULL,
@@ -23,6 +24,12 @@ if(isset($_POST['submit'])) {
         $ok.=$username;
         if($conn->query($sql3) === true){
             $ok.="Table created successfully.";
+
+            // strip of special characters
+            $title = htmlspecialchars($title);
+            $text = htmlspecialchars($text);
+
+            // die($title." ".$text);
 
             $sql4="INSERT INTO article VALUES(DEFAULT,'$username','$title','$text')";
             if($conn->query($sql4) === true){
@@ -35,6 +42,7 @@ if(isset($_POST['submit'])) {
         }
     }
     else if($option=='poem') {
+        
         $sql3="CREATE TABLE IF NOT EXISTS poem(
             ID INT PRIMARY KEY AUTO_INCREMENT,
             Username VARCHAR(70) NOT NULL,
@@ -56,6 +64,7 @@ if(isset($_POST['submit'])) {
         }
     }
     else if($option=='photo') {
+        
         $sql3="CREATE TABLE IF NOT EXISTS photo(
             ID INT PRIMARY KEY AUTO_INCREMENT,
             Username VARCHAR(70) NOT NULL,
@@ -92,7 +101,7 @@ if(isset($_POST['submit'])) {
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />  
     <style type="text/css">
 
         body {
@@ -128,13 +137,13 @@ if(isset($_POST['submit'])) {
 
             <form method="post">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-outline-dark ">
+                    <label class="btn btn-outline-dark theme-color text-white">
                     <input type="radio" name="opt" id="optarticle" value="article" autocomplete="off" > Article
                     </label>
-                    <label class="btn btn-outline-dark">
+                    <label class="btn btn-outline-dark theme-color text-white">
                     <input type="radio" name="opt" id="optpoem" value="poem" autocomplete="off"> Poem
                     </label>
-                    <label class="btn btn-outline-dark">
+                    <label class="btn btn-outline-dark text-white theme-color ">
                     <input type="radio" name="opt" id="optphoto" value="photo" autocomplete="off"> Photo
                     </label>
                 </div>   

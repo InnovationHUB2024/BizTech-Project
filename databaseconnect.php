@@ -3,8 +3,8 @@
     // Path: databaseconnect.php
     $host = 'localhost'; // Database
     $user = 'root'; // Database username
-    $pass = ''; // password for the database
-    $db = ''; // name of the database
+    $pass = 'p@55w0rd'; // password for the database
+    $db = 'miva_blog'; // name of the database
 
 
     $conn = new mysqli($host, $user, $pass, $db);

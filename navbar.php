@@ -1,15 +1,14 @@
 <?php
-if($_POST) {
-  if(isset($_POST["login"])) {
+if ($_POST) {
+  if (isset($_POST["login"])) {
     header("Location:login.php");
-  }
-  elseif(isset($_POST["signup"])) {
+  } elseif (isset($_POST["signup"])) {
     header("Location:signup.php");
   }
 }
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/Papirus-Team-Papirus-Apps-Rlogo-icon.512.png" height="30px" width="30px"></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark theme-color">
+  <a class="navbar-brand" href="#"><img src="images/miva.png" height="40px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,13 +21,12 @@ if($_POST) {
       <li class="nav-item">
         <a class="nav-link" href="photography.php">Photography</a>
       </li>
-      
-      
+
+
     </ul>
     <form class="form-inline my-2 my-lg-0" method="post">
-      <input class="btn btn-outline-light my-2 my-sm-0" type="submit" name="login" value="Log In">
+      <input class="btn btn-outline-light my-2 my-sm-0 mr-2" type="submit" name="login" value="Log In">
       <input class="btn btn-outline-light my-2 my-sm-0" type="submit" name="signup" value="Sign Up">
-      
     </form>
   </div>
 </nav>
