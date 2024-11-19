@@ -123,14 +123,17 @@ session_start();
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-5">
               <div class="row">
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body ">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>The Power of Collaboration: Why Teamwork Matters in School</b></h5>
+                      <p class="card-text">
+                       Highlight the importance of working together on projects, group discussions, and extracurricular activities. 
+                       Share tips on effective collaboration and how it benefits personal growth and success in academics.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -138,9 +141,12 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>Top Study Tips to Ace Your Exams</b></h5>
+                      <p class="card-text">
+                      Provide actionable study techniques, like using flashcards, creating a schedule, and taking breaks. 
+                      Include advice on managing stress and balancing study with relaxation.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -148,9 +154,12 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>Exploring the Digital World: Safe Internet Practices for Students</b>t</h5>
+                      <p class="card-text">
+                       Educate readers about cybersecurity and online etiquette. Share practical tips on protecting personal 
+                       information, avoiding cyberbullying, and recognizing phishing attempts.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -158,9 +167,12 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>Why Extracurricular Activities are the Key to Success</b></h5>
+                      <p class="card-text">
+                        Discuss the role of sports, arts, and clubs in developing leadership, teamwork, and creativity. 
+                        Share success stories from students who excelled due to their participation in such activities.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -173,9 +185,12 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>Sustainability Starts in School: Go Green Initiatives</b></h5>
+                      <p class="card-text">
+                       Write about eco-friendly practices students can adopt, like recycling, reducing plastic use, and participating in tree-planting drives. 
+                       Highlight your school's sustainability efforts.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -183,9 +198,12 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title"><b>Leadership Lessons: What I Learned from Being a Class Representative</b></h5>
+                      <p class="card-text">
+                       Offer personal insights or interviews with student leaders about the challenges and 
+                       rewards of leadership roles in school.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -193,9 +211,26 @@ session_start();
                 <div class="col-md-12 mb-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary theme-color">Go somewhere</a>
+                      <h5 class="card-title"><b>The Art of Balancing School and Personal Life</b></h5>
+                      <p class="card-text">
+                       Provide tips on time management, setting priorities, and finding time for 
+                       hobbies while keeping up with schoolwork.
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Hidden Gems of Our School Campus</b></h5>
+                      <p class="card-text">
+                       Have you discovered all the treasures within our campus? From our serene library to the blooming garden and inspiring artwork adorning the corridors, 
+                       each corner has a story. These spaces foster creativity, provide tranquility, 
+                       and inspire learning. Take a walk and explore—you might find your favorite spot!
+                      </p>
+                      <a href="#" class="btn btn-primary">See More</a>
                     </div>
                   </div>
                 </div>
@@ -213,14 +248,17 @@ session_start();
   <hr />
   <div class="container pt-5">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-5">
         <div class="row">
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body ">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>Mastering the Art of Public Speaking</b></h5>
+                <p class="card-text">
+                 Share tips on overcoming stage fright, crafting compelling speeches, and engaging an audience. 
+                 Include anecdotes from students who improved their public speaking skills.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -228,9 +266,12 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>How to Build Your College Application Portfolio</b></h5>
+                <p class="card-text">
+                 Guide students on organizing extracurricular achievements, writing strong personal statements, 
+                 and obtaining impactful letters of recommendation.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -238,9 +279,12 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>Mental Health Matters: Coping with School Stress</b></h5>
+                <p class="card-text">
+                 Provide actionable advice on managing stress, recognizing burnout, and seeking help. 
+                 Highlight the importance of self-care and mental health awareness.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -248,9 +292,13 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>The Evolution of Technology in Education</b></h5>
+                <p class="card-text">
+                Explore how tools like tablets, coding platforms, and virtual learning environments are reshaping 
+                the way students learn and collaborate.
+
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -263,9 +311,11 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>Volunteer Work: Giving Back to the Community</b></h5>
+                <p class="card-text">
+                  Emphasize the value of volunteering for personal growth and college applications. Share opportunities for 
+                  high school students to get involved in their communities.</p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -273,9 +323,12 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>The Science Behind Effective Time Management</b></h5>
+                <p class="card-text">
+                 Offer a detailed breakdown of time management strategies, such as using planners, 
+                 prioritizing tasks, and avoiding procrastination.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
@@ -283,9 +336,25 @@ session_start();
           <div class="col-md-12 mb-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><b>Discovering Career Paths in High School</b></h5>
+                <p class="card-text">
+                 Write about how students can explore potential careers through internships, shadowing professionals, 
+                 or engaging in career counseling sessions.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>The Role of Social Media in Shaping Identity</b></h5>
+                <p class="card-text">
+                 Discuss the impact of social media on self-esteem, relationships, and personal branding. 
+                 Share tips on using social platforms positively.
+                </p>
+                <a href="#" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
