@@ -143,7 +143,7 @@
     <span id="alert"></span>
 </div>
 
-<button class="back">Back <i class="fa fa-arrow-circle-o-left"></i></button>
+<a href="index.php"><button class="back">Back <i class="fa fa-arrow-circle-o-left"></i></button></a>
 <!-- for password and confirm password--> 
 <script type="text/javascript">
     $('#form').on('submit', function(e) {
